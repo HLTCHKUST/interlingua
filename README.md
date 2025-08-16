@@ -1,4 +1,5 @@
 # High-Dimensional Interlingual Representations of Large Language Models
+<img align="right" src="img/caire.png" width="18%"> <img align="right" src="img/HKUST.jpeg" width="7%">
 [Bryan Wilie](https://bryanwilie.github.io/), Samuel Cahyawijaya, Junxian He, and Pascale Fung.<br>
 
 This is the official repository for the [paper: "High-Dimensional Interlingual Representations of Large Language Model"](https://aclanthology.org/2025.sigtyp-1.14.pdf), orally presented and published in the [SIGTYP at ACL 2025](https://sigtyp.github.io/ws2025-sigtyp-schedule.html).
