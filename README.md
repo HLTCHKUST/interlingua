@@ -1,4 +1,32 @@
 # High-Dimensional Interlingual Representations of Large Language Models
-[Bryan Wilie](https://bryanwilie.github.io/), Samuel Cahyawijaya, Junxian He, and Pascale Fung. ([PDF]())<br>
+[Bryan Wilie](https://bryanwilie.github.io/), Samuel Cahyawijaya, Junxian He, and Pascale Fung.<br>
 
-Large language models (LLMs) trained on multilingual data may form shared interlingual representations, but evidence is mixed. We analyze 31 languages across resource levels, typologies, and regions, finding inconsistent cross-lingual alignments. To address this, we propose an interlingual representation framework that identifies both shared and fragmented components. We introduce the Interlingual Local Overlap (ILO) score to quantify alignment by comparing local neighborhood structures. <br>
+This is the official repository for the [paper: "High-Dimensional Interlingual Representations of Large Language Model"](https://aclanthology.org/2025.sigtyp-1.14.pdf), orally presented and published in the [SIGTYP at ACL 2025](https://sigtyp.github.io/ws2025-sigtyp-schedule.html).
+
+## Overview
+
+Large language models (LLMs) trained on massive multilingual datasets hint at the formation of interlingual constructs--a shared region in the representation space. However, evidence regarding this phenomenon is mixed, leaving it unclear whether these models truly develop unified interlingual representations, or present a partially aligned constructs. We explore 31 diverse languages varying on their resource-levels, typologies, and geographical regions; and find that multilingual LLMs exhibit inconsistent cross-lingual alignments. 
+
+To address this, we propose an interlingual representation framework identifying both the shared interlingual semantic region and fragmented components, existed due to representational limitations. We introduce <b>Interlingual Local Overlap (ILO)</b> score to quantify interlingual alignment by comparing the local neighborhood structures of high-dimensional representations.
+
+We utilize the ILO score to investigate the impact of single-language fine-tuning on the interlingual alignment in multilingual LLMs. Our results indicate that training exclusively on a single language disrupts the alignment in early layers, while doing <b>selective freezing</b> on these layers preserves alignment of the interlingual representations, leading to improved cross-lingual generalization. 
+
+These results validate our framework and metric for evaluating interlingual representation, and further underscore that interlingual alignment is crucial for scalable multilingual learning.
+
+## Usage
+
+To derive the ILO scores of an LLM, run `bash run_get_ilo.sh`.<br>
+To selectively freeze model's parameters, use `from src.param_freeze import selective_grad_freeze` or see `Selective freezing.ipynb` for a simple demonstration.
+
+## Citation
+
+```
+@article{wilie2025interlingua,
+    title={High-dimensional interlingual representations of large language models},
+    author={Wilie, Bryan and Cahyawijaya, Samuel and He, Junxian and Fung, Pascale},
+    booktitle = "Proceedings of the 7th Workshop on Research in Computational Linguistic Typology and Multilingual NLP",
+    year = {2025},
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    }
+```
