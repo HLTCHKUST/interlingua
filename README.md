@@ -16,11 +16,13 @@ These results validate our framework and metric for evaluating interlingual repr
 
 ## Usage
 
-To derive the ILO scores of an LLM, run `bash run_get_ilo.sh`.<br>
-To selectively freeze model's parameters, use `from src.param_freeze import selective_grad_freeze` or see `Selective freezing.ipynb` for a simple demonstration.
+To derive the ILO scores of a language model, run `bash run_get_ilo.sh`.<br>
+To selectively freeze model's parameters, use `from src.param_freeze import selective_grad_freeze` or see `Selective freezing.ipynb` for a simple demonstration.<br>
+On both deriving the ILO scores and selectively freezing model's parameters, we have set the default to follow the best settings as reported in the paper.
 
 ## Citation
 
+If you find the research paper or the code useful, please cite:
 ```
 @article{wilie2025interlingua,
     title={High-dimensional interlingual representations of large language models},
