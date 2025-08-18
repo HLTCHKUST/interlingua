@@ -24,12 +24,13 @@ On both deriving the ILO scores and selectively freezing model's parameters, we 
 
 If you find the research paper or the code useful, please cite:
 ```
-@article{wilie2025interlingua,
+@inproceedings{wilie2025interlingua,
     title={High-dimensional interlingual representations of large language models},
     author={Wilie, Bryan and Cahyawijaya, Samuel and He, Junxian and Fung, Pascale},
     booktitle = "Proceedings of the 7th Workshop on Research in Computational Linguistic Typology and Multilingual NLP",
     year = {2025},
     address = "Vienna, Austria",
     publisher = "Association for Computational Linguistics",
+    paper = {https://aclanthology.org/2025.sigtyp-1.14/},
     }
 ```
